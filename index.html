@@ -30,6 +30,22 @@
 					<li> What</li>
 					<li> Dash</li>
 					<li> Pop</li>
+					<li> The DOM will be loaded from TOP To Buttom</li>
+	
+<pre>
+1) $(function(){
+	$('li:first-child').addClass('color');
+});
+						
+works similar to
+						
+2) $(document).ready(function(){
+	$('li:first-child').addClass('color');
+});
+
+Second one is more readable
+</pre>
+					
 				</ul>
 			</div>
 		</div>
@@ -42,8 +58,8 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	
 	<script>
-		$(document).ready(function(){
-			$('li').addClass('color');
+		$(function(){
+			$('li:first-child').addClass('color');
 		});
 	</script>
 	
