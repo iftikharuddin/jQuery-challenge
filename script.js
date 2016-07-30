@@ -1,3 +1,3 @@
 $(function(){
-	$('ul').children('li').addClass('color');
+	$('ul.test li:nth-child(2)').text('added with jQueryr');
 });
