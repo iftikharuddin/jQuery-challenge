@@ -1,3 +1,3 @@
 $(function(){
-	$('li:first-child').addClass('color');
+	$('ul').children('li').addClass('color');
 });
