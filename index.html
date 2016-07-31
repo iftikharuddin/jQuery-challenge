@@ -25,9 +25,17 @@
   
 	<script>
 		(function(){
-			var dd = $('dd');
-			//dd.hide();
-			dd.addClass('hide');
+			
+			$('dd').filter(':nth-child(n+4)').addClass('hide');
+			
+			$('dt').on('mouseenter',function(){
+				$(this)
+					.next()
+						.slideDown()
+						.siblings('dd')
+							.slideUp(300);
+				
+			})
 		})();
 	</script>
 	
