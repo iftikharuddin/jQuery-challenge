@@ -28,14 +28,13 @@
 			
 			$('dd').filter(':nth-child(n+4)').addClass('hide');
 			
-			$('dt').on('mouseenter',function(){
+			$('dl').on('mouseenter', 'dt', function(){
 				$(this)
 					.next()
 						.slideDown()
 						.siblings('dd')
 							.slideUp(300);
-				
-			})
+			});
 		})();
 	</script>
 	
