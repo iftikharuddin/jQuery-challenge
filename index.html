@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Bind live delagate.. on | Mastering jQuery with Jeffery Way</title>
+    <title>Append Prepend| Mastering jQuery with Jeffery Way</title>
 	<link rel="stylesheet" href="style.css">
   </head>
   <body>
+	<div class="article">
+		<h1>This is title</h1>
+		
+		<p>This is a test article from Iftikhar uddin</p>
 	
-		<h2>Click me </h2>
-		<h2>Click me </h2>
-	
+	</div>
 	
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   
 	<script>
 		(function(){
-			$('h2').click(function(){
-				//behinde the seen bind and click is calling .on
-				//jQuery .live() has been removed in version 1.9 onwards.
-				//oops ON is the jQuery king
-
-				$(this).clone(true).appendTo('body');
-				
-			})
+			$('.article').append('This is cool');
 		})();
 	</script>
 	
