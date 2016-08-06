@@ -1,24 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
-	width:500px;
-	margin:auto;
-	text-align:center;
-}
-dl {
-
-}
-dd {
-	margin:0px;
-	padding: 1em 0;
+	font-size: 62.5%;
+	font-family: Helvetica, sans-serif;
+	background: url(images/stripe.png) repeat;
 }
 
-dt {
-	cursor:pointer;
-	font-weight: bold;
-	line-height: 2em;
-	background: #e3e3e3;
-	border-bottom:1px solid #ddd;
-	border-top: 1px solid #fff;
+p {
+	font-size: 1.3em;
+	margin-bottom: 15px;
 }
-.hide {
+
+#page-wrap {
+	width: 660px;
+	background: white;
+	padding: 20px 50px 20px 50px;
+	margin: 20px auto;
+	min-height: 500px;
+	height: auto !important;
+	height: 500px;
+}
+
+#contact-area {
+	width: 600px;
+	margin-top: 25px;
+}
+
+#contact-area input, #contact-area textarea {
+	padding: 5px;
+	width: 471px;
+	font-family: Helvetica, sans-serif;
+	font-size: 1.4em;
+	margin: 0px 0px 10px 0px;
+	border: 2px solid #ccc;
+}
+
+#contact-area textarea {
+	height: 90px;
+}
+.js #contact-area{
+	position:absolute;
+	top:0;
+	width:inherit;
 	display:none;
+}
+#contact-area textarea:focus, #contact-area input:focus {
+	border: 2px solid #900;
+}
+
+#contact-area input.submit-button {
+	width: 100px;
+	float: right;
+}
+
+label {
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 100px;
+	padding-top: 5px;
+	font-size: 1.4em;
 }
